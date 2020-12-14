@@ -16,21 +16,17 @@ with open(path, encoding='utf8') as f:
 def f1(arg):
     return sorted(list(Unique(field(arg, 'job-name'), ignore_case=True)), key=lambda x: str.casefold(x))
 
-
 @print_result
 def f2(arg):
     return list(filter(lambda x: "программист" in x.lower(), arg))
-
 
 @print_result
 def f3(arg):
     return list(map(lambda x: x + " с опытом Python", arg))
 
-
 @print_result
 def f4(arg):
     return dict(zip(arg, gen_random(len(arg), 100000, 200000)))
-
 
 if __name__ == '__main__':
     with cm_timer_1():

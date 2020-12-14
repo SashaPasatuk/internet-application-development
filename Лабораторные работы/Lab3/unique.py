@@ -21,10 +21,10 @@ class Unique(object):
     def __iter__(self):
         return self
 
-#a=[1,1,1,1,1,2,2,2,2,2]
-#b=['a','A','b', 'B', 'a', 'A', 'c', 'C']
-#c=gen_random(5,3,7)
-#print(list(Unique(a)))
-#print(list(Unique(b)))
-#print(list(Unique(b, ignore_case=True)))
-#print(list(Unique(c)))
+a=[1,1,1,1,1,2,2,2,2,2]
+b=['a','A','b', 'B', 'a', 'A', 'c', 'C']
+c=gen_random(5,3,7)
+print(list(Unique(a)))
+print(list(Unique(b)))
+print(list(Unique(b, ignore_case=True)))
+print(list(Unique(c)))

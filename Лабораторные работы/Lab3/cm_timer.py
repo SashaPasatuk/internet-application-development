@@ -20,7 +20,7 @@ class cm_timer_2:
         self._start_time = None
         print(f"Elapsed time: {elapsed_time:0.4f} seconds")
 
-#with cm_timer_1():
-    #time.sleep(5.5)
-#with cm_timer_2():
-    #time.sleep(3.5)
+with cm_timer_1():
+    time.sleep(5.5)
+with cm_timer_2():
+    time.sleep(3.5)

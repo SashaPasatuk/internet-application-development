@@ -19,5 +19,5 @@ goods=[
     {'title': 'Диван для отдыха','price': 5300, 'color': 'black'}
     ]
 
-#print(list(field(goods, 'title')))
-#print(list(field(goods, 'title', 'price')))
+print(list(field(goods, 'title')))
+print(list(field(goods, 'title', 'price')))
