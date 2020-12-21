@@ -1,0 +1,7 @@
+body{
+	background: Aquamarine;
+}
+.colortext {
+    background-color: LightCyan; /* Цвет фона */
+    color: black; /* Цвет текста */
+}
