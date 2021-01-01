@@ -1,0 +1,29 @@
+body{
+    background: #000000;
+    text-align: center;
+    color: white;
+}
+ img
+ {
+     width: 900px;
+     height: 700px;
+ }
+p
+{
+    text-align: left;
+}
+goback
+{
+       text-align: left;
+        width: 100px;
+        height: 100px;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+}
+a:hover
+{
+     color: #eb5959;
+}

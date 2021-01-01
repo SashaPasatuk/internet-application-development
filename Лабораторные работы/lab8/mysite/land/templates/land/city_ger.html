@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Germany</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="{% static 'main/css/pages.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+<h1>Германия</h1>
+<p>Герма́ния, официальное название — Федерати́вная Респу́блика Герма́ния, ФРГ — государство в Центральной Европе. Площадь территории — 357 408,74 км². Численность населения на 31 декабря 2018 года — 83 019 200 жителей.<br>
+По государственному устройству является федеративным государством в составе 16 субъектов — федеральных земель. Форма государственного правления — парламентская республика. Столица — Берлин. Государственный язык — немецкий.<br></p>
+<table  class="table table-info table-bordered border-sucsess">
+ <thead class="table-dark">
+    <tr>
+      <th scope="col">Крепнейшие города Германии</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Кёльн</th>
+    </tr>
+ 	<tr>
+      <th scope="row">Гамбург</th>
+    </tr>
+    <tr>
+    <tr>
+      <th scope="row">Мюнхен</th>
+    </tr>
+    <tr>
+    <tr>
+      <th scope="row">Лейпциг</th>
+    </tr>
+    <tr>
+    <tr>
+      <th scope="row">Дюссельдорф</th>
+    </tr>
+     <tr>
+    </tr>
+  </tbody>
+</table>
+<img src="{% static 'main/img/5.jpg' %}" class="img-rounded" alt="Cinque Terre">
+<div class="goback">
+<a href="{% url 'countries' %}">Обратно к списку</a>
+</div>
+</body>
+</html>

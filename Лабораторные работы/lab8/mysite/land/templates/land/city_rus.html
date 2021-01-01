@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Russia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="{% static 'main/css/pages.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+<h1>Россия</h1>
+<p>Росси́я, другое официальное название — Росси́йская Федера́ция[e] (РФ), — государство в Восточной Европе и Северной Азии. Территория России в её конституционных границах составляет 17 125 191 км²; население страны (в пределах её заявленной территории) составляет 146 748 590 чел.<br>
+<p>Столица — Москва. Государственный язык — русский. Государственный строй — президентско-парламентская республика с федеративным устройством.<br>
+<table  class="table table-info table-bordered border-sucsess">
+ <thead class="table-dark">
+    <tr>
+      <th scope="col">Крупнейшие города России</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Москва</th>
+    </tr>
+    <tr>
+ 	<tr>
+      <th scope="row">Ст. Петербург</th>
+    </tr>
+    </tr>
+    <tr>
+    <tr>
+      <th scope="row">Новосибирск</th>
+    </tr>
+    <tr>
+    <tr>
+      <th scope="row">Екатеринбург</th>
+    </tr>
+    <tr>
+    <tr>
+      <th scope="row">Казань</th>
+    </tr>
+     <tr>
+    </tr>
+  </tbody>
+</table>
+<img src="{% static 'main/img/6.jpg' %}" class="img-rounded" alt="Cinque Terre">
+<div class="goback">
+<a href="{% url 'countries' %}">Обратно к списку</a>
+</div>
+</body>
+</html>

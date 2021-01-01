@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countries</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+<h1>Описание стран</h1>
+<ul class="list-unstyled">
+    <li><a href="{% url 'russia' %}"><img src="{% static 'main/img/1.jpeg' %}" title="Россия"></a></li>
+    <li><a href="{% url 'germany' %}"><img src="{% static 'main/img/2.jpg' %}" title="Германия"></a></li>
+    <li><a href="{% url 'japan' %}"><img src="{% static 'main/img/3.jpg' %}" title="Япония"></a></li>
+</ul>
+</body>
+</html>
