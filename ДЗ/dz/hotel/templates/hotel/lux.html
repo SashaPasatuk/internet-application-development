@@ -1,0 +1,23 @@
+{% extends 'hotel/base.html' %}
+
+{% block title %}
+Номера "Люкс"
+{% endblock %}
+
+{% block content %}
+    <h2 class="text-center">Забронированные "Люкс" номера</h2>
+    {% for room in lux %}
+        {% if room.type == "Люкс" %}
+            <p>
+                <h3 align="center">{{room.number}}</h3>
+                <table align="center">
+                    <tr><th width="320">ФИО</th><th width="200">Дата заезда</th><th width="200">Дата выезда</th><th>Телефон</th></tr>
+                    {% for guest in room.name.all %}
+                    <tr><td>{{ guest.name }}</td><td>{{ guest.data1 }}</td><td>{{ guest.data2 }}</td> <td>{{ guest.phone }}</td></tr>
+                    {% endfor %}
+                    </table>
+            </p>
+        {% endif %}
+    {% endfor %}
+
+{% endblock %}

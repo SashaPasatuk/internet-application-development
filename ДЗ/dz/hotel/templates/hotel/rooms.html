@@ -1,0 +1,15 @@
+{% extends 'hotel/base.html' %}
+
+{% block title %}
+Список номеров
+{% endblock %}
+
+{% block content %}
+    <h2 class="text-center">Номера отеля</h2>
+    <h5><table rules="all" align="center">
+        <tr align="center"><th width="200">Номер</th><th width="260">Вместимость</th><th width="260">Тип номера</th><th>Цена за сутки, руб.</th></tr>
+        {% for room in list %}
+        <tr align="center"><td>{{ room.number }}</td><td>{{ room.count }}</td><td>{{ room.type }}</td> <td>{{ room.price }}</td></tr>
+        {% endfor %}
+    </table></h5>
+{% endblock %}
